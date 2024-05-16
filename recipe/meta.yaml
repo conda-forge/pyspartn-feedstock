@@ -1,5 +1,5 @@
 {% set name = "pyspartn" %}
-{% set version = "0.4.0" %}
+{% set version = "1.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyspartn-{{ version }}.tar.gz
-  sha256: 62a89261daa106fc614f5de39c429915815b74e2c0ee1f1af421e35573dec4b0
+  sha256: e9c468e66d65149a2c7373dbca8cccc8bf1fcbc32c4b920875f12b4657823ad9
 
 build:
   noarch: python
@@ -22,8 +22,7 @@ requirements:
     - pip
   run:
     - python >=3.8
-    - cryptography >=39.0.2
-
+    - cryptography >=42.0.0
 test:
   imports:
     - pyspartn
