@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pyspartn-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyspartn-{{ version }}.tar.gz
   sha256: 69a0e60f5d16d3a49cd853749754e4ed49b8a4a6a8fa2f5ab8eb6ba824984188
 
 build:
