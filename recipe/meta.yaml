@@ -1,5 +1,5 @@
 {% set name = "pyspartn" %}
-{% set version = "1.0.5" %}
+{% set version = "1.0.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,22 +7,22 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyspartn-{{ version }}.tar.gz
-  sha256: 69a0e60f5d16d3a49cd853749754e4ed49b8a4a6a8fa2f5ab8eb6ba824984188
+  sha256: c7e3403991fd99f7f6c732938c5e5d62dff697207c4dbd99faaafed1b2cefa98
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
     - python {{ python_min }}
-    - setuptools >=66.0.0
+    - setuptools >=75.0.0
     - wheel
     - pip
   run:
     - python >={{ python_min }}
-    - cryptography >=42.0.0
+    - cryptography >=45.0.0
 test:
   imports:
     - pyspartn
