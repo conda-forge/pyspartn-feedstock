@@ -1,5 +1,5 @@
 {% set name = "pyspartn" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyspartn-{{ version }}.tar.gz
-  sha256: 2d701f226a57bcbd5b61af51d4bdcb39d45842baf103678c396af7011cf5c66a
+  sha256: 5f4eddb1bde18c3074a84da9be2222f1a5d6338cb70121cf29da16397524634d
 
 build:
   noarch: python
