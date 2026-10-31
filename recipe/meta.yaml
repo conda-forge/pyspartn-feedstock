@@ -1,5 +1,5 @@
 {% set name = "pyspartn" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/pyspartn-{{ version }}.tar.gz
-  sha256: 5f4eddb1bde18c3074a84da9be2222f1a5d6338cb70121cf29da16397524634d
+  sha256: 70b7585e1c66ff30feb0722c98fa28de37829c5c701d1b4864eb21241cbc6654
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ requirements:
     - python {{ python_min }}
     - setuptools >=75.0.0
     - wheel
-    - pip
+    - pip >=25.1
   run:
     - python >={{ python_min }}
 test:
